@@ -45,8 +45,7 @@ nav ul li a {
   align-items: center;
 }
 .banner-content {
-  width: 50%;
-  margin-right: 100px;
+  width: 70%;
 }
 
 .banner-header {
@@ -79,16 +78,19 @@ nav ul li a {
 }
 
 .banner-image {
-  width: 50%;
-  margin-left: 100px;
-  background-image: url("./images/Circle\ design.svg");
+  width: 80%;
+  height: 100%;
+  margin-left: 80px;
+  padding-left: 20px;
+  background-image: url("./images/Group\ 33091.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  text-align: center;
 }
 
 .banner-image img {
-  width: 80%;
+  width: 70%;
 }
 
 /* sponsor section start */
@@ -106,7 +108,7 @@ nav ul li a {
 /* popular collection  */
 
 .popular {
-  width: 70%;
+  width: 80%;
   margin: 50px auto;
 }
 
@@ -118,7 +120,7 @@ nav ul li a {
 }
 
 .popular-container {
-  gap:30px;
+  gap: 40px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -153,6 +155,74 @@ nav ul li a {
 
 .star .fa {
   color: #fb8200;
+}
+
+.see-more {
+  margin: 50px auto 50px;
+  text-align: right;
+  color: rgba(224, 44, 109, 0.95);
+}
+
+.feature-products {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto 50px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-content {
+  margin-left: 150px;
+  width: 50%;
+}
+
+.feature-head {
+  color: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.feature-text {
+  margin: 20px 100px 20px 0;
+}
+
+.feature-img {
+  width: 33%;
+}
+
+.feature-img img {
+  width: 100%;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: #0a0826;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.copy,
+.right {
+  color: #d9dbe1;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social .fa {
+  background-color: #231f53;
+  padding: 15px 17px;
+  font-size: 24px;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 576px) {
@@ -200,8 +270,10 @@ nav ul li a {
   }
 
   .banner-image {
-    width: 100%;
+    width: 90%;
+    height: 80%;
     margin: 0 0 20px;
+    background-size: cover;
   }
 
   .sponsor {
@@ -210,12 +282,37 @@ nav ul li a {
     row-gap: 20px;
   }
 
-  .popular{
-    width:90%;
+  .popular {
+    width: 90%;
+    margin-bottom: 50px;
   }
 
-  .popular-container{
+  .popular-container {
     grid-template-columns: 1fr;
-    
+  }
+
+  .feature-products {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin: 150px auto 50px;
+  }
+
+  .feature-content {
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .feature-head {
+    font-size: 24px;
+  }
+
+  .feature-text {
+    width: 100%;
+  }
+
+  .feature-img {
+    width: 95%;
+    margin-top: 20px;
   }
 }
